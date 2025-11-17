@@ -5,6 +5,8 @@
 const translations = {
   he: {
     // Navigation
+    'nav.home': 'דף הבית',
+    'nav.back': '← חזור לדף הבית',
     'nav.features': 'תכונות',
     'nav.pricing': 'מחירים',
     'nav.login': 'התחברות',
@@ -73,6 +75,7 @@ const translations = {
     // Footer
     'footer.privacy': 'מדיניות פרטיות',
     'footer.terms': 'תנאי שימוש',
+    'footer.home': 'דף הבית',
     'footer.contact': 'צור קשר',
     'footer.copyright': '© 2024 WhatsApp Expense Tracker. כל הזכויות שמורות.',
 
@@ -109,6 +112,8 @@ const translations = {
   },
   en: {
     // Navigation
+    'nav.home': 'Home',
+    'nav.back': '← Back to Home',
     'nav.features': 'Features',
     'nav.pricing': 'Pricing',
     'nav.login': 'Login',
@@ -177,6 +182,7 @@ const translations = {
     // Footer
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Service',
+    'footer.home': 'Home',
     'footer.contact': 'Contact',
     'footer.copyright': '© 2024 WhatsApp Expense Tracker. All rights reserved.',
 
@@ -243,10 +249,15 @@ function toggleLanguage() {
 
 // Apply language to page
 function applyLanguage(lang) {
-  // Update body direction
+  // Update HTML tag direction and language
+  const htmlElement = document.documentElement;
   if (lang === 'he') {
+    htmlElement.setAttribute('lang', 'he');
+    htmlElement.setAttribute('dir', 'rtl');
     document.body.classList.add('rtl');
   } else {
+    htmlElement.setAttribute('lang', 'en');
+    htmlElement.setAttribute('dir', 'ltr');
     document.body.classList.remove('rtl');
   }
 
