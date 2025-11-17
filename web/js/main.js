@@ -104,11 +104,13 @@ const translations = {
 
     // Privacy Policy
     'privacy.title': 'מדיניות פרטיות',
-    'privacy.updated': 'עודכן לאחרונה',
+    'privacy.updated': 'עודכן לאחרונה:',
+    'privacy.date': 'נובמבר 2024',
 
     // Terms of Service
     'terms.title': 'תנאי שימוש',
-    'terms.updated': 'עודכן לאחרונה'
+    'terms.updated': 'עודכן לאחרונה:',
+    'terms.date': 'נובמבר 2024'
   },
   en: {
     // Navigation
@@ -211,11 +213,13 @@ const translations = {
 
     // Privacy Policy
     'privacy.title': 'Privacy Policy',
-    'privacy.updated': 'Last updated',
+    'privacy.updated': 'Last updated:',
+    'privacy.date': 'November 2024',
 
     // Terms of Service
     'terms.title': 'Terms of Service',
-    'terms.updated': 'Last updated'
+    'terms.updated': 'Last updated:',
+    'terms.date': 'November 2024'
   }
 };
 
