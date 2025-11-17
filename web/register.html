@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="הרשמה לשירות מעקב הוצאות בוואטסאפ">
+    <title>הרשמה - WhatsApp Expense Tracker</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="rtl">
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="/index.html" class="logo">
+                <span class="logo-icon">💰</span>
+                <span>Expense Tracker</span>
+            </a>
+            <nav class="nav-links">
+                <button id="langToggle" class="lang-toggle">English</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Registration Form -->
+    <section style="padding: 3rem 0; min-height: calc(100vh - 200px);">
+        <div class="container-narrow">
+            <div class="text-center mb-lg">
+                <h1 data-i18n="register.title">הרשמה לשירות</h1>
+                <p data-i18n="register.subtitle" style="color: var(--text-light);">מלא את הפרטים ותוכל להתחיל מיד</p>
+            </div>
+
+            <form id="registerForm" style="background: var(--background); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label for="phone" data-i18n="register.phone.label">מספר וואטסאפ</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="050-1234567"
+                        data-i18n-placeholder="register.phone.placeholder"
+                        required
+                        autocomplete="tel"
+                    >
+                    <div id="phoneError" class="form-error"></div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email" data-i18n="register.email.label">כתובת אימייל</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        data-i18n-placeholder="register.email.placeholder"
+                        required
+                        autocomplete="email"
+                    >
+                    <div id="emailError" class="form-error"></div>
+                </div>
+
+                <!-- Plan Selection -->
+                <div class="form-group">
+                    <label for="plan" data-i18n="register.plan.label">בחר תוכנית</label>
+                    <select id="plan" name="plan" required>
+                        <option value="trial" data-i18n="register.plan.trial">ניסיון חינם (14 יום)</option>
+                        <option value="monthly" data-i18n="register.plan.monthly">מנוי חודשי - ₪19/חודש</option>
+                        <option value="yearly" data-i18n="register.plan.yearly">מנוי שנתי - ₪190/שנה</option>
+                    </select>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">
+                            <span data-i18n="register.terms.text">אני מסכים ל</span>
+                            <a href="/terms.html" target="_blank" data-i18n="register.terms.link">תנאי השימוש</a>
+                            <span data-i18n="register.terms.and">ול</span>
+                            <a href="/privacy.html" target="_blank" data-i18n="register.privacy.link">מדיניות הפרטיות</a>
+                        </label>
+                    </div>
+                    <div id="termsError" class="form-error"></div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submitBtn" class="btn btn-primary btn-block" data-i18n="register.submit">
+                    השלם הרשמה
+                </button>
+
+                <!-- Payment Note -->
+                <div class="alert alert-info mt-md">
+                    <small>
+                        <span data-i18n="register.payment.note">
+                            💳 תשלום יתבצע רק בתום תקופת הניסיון. אפשר לבטל בכל עת.
+                        </span>
+                    </small>
+                </div>
+            </form>
+
+            <!-- Back to Home -->
+            <div class="text-center mt-md">
+                <a href="/index.html" style="color: var(--text-light);">
+                    <span data-i18n="nav.back">← חזור לדף הבית</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/privacy.html" data-i18n="footer.privacy">מדיניות פרטיות</a>
+                <a href="/terms.html" data-i18n="footer.terms">תנאי שימוש</a>
+            </div>
+            <p class="footer-text" data-i18n="footer.copyright">© 2024 WhatsApp Expense Tracker. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="מעקב הוצאות חכם בוואטסאפ - נהל את התקציב המשפחתי בקלות ובעברית">
+    <title>WhatsApp Expense Tracker - מעקב הוצאות בוואטסאפ</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="rtl">
+    <!-- Animated Background Shapes -->
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">💰</span>
+                <span>Expense Tracker</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#features" data-i18n="nav.features">תכונות</a>
+                <a href="#pricing" data-i18n="nav.pricing">מחירים</a>
+                <button id="langToggle" class="lang-toggle">English</button>
+                <a href="/register.html" class="btn btn-primary" data-i18n="nav.register">הרשמה</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-icon">📱💸✨</div>
+            <h1 data-i18n="hero.title">עקוב אחרי ההוצאות שלך בוואטסאפ</h1>
+            <p data-i18n="hero.subtitle">מערכת פשוטה וחכמה למעקב הוצאות משותפות בעברית</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; position: relative; z-index: 1;">
+                <a href="/register.html" class="btn btn-whatsapp" data-i18n="hero.cta.primary">התחל בחינם 🚀</a>
+                <a href="#features" class="btn btn-secondary" data-i18n="hero.cta.secondary">למד עוד</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title" data-i18n="benefits.title">למה לבחור בנו? ⭐</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">👥💜</div>
+                    <h3 data-i18n="benefits.shared.title">תקציבים משותפים</h3>
+                    <p data-i18n="benefits.shared.desc">נהל תקציבים משותפים עם המשפחה או השותפים בקלות</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🇮🇱💙</div>
+                    <h3 data-i18n="benefits.hebrew.title">ממשק בעברית</h3>
+                    <p data-i18n="benefits.hebrew.desc">ממשק ידידותי ומלא בעברית, ללא צורך באנגלית</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡💛</div>
+                    <h3 data-i18n="benefits.realtime.title">מעקב בזמן אמת</h3>
+                    <p data-i18n="benefits.realtime.desc">עדכון מיידי של כל ההוצאות דרך וואטסאפ</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨🧡</div>
+                    <h3 data-i18n="benefits.easy.title">קל לשימוש</h3>
+                    <p data-i18n="benefits.easy.desc">פשוט שלח הודעה בוואטסאפ - אנחנו נעשה את השאר</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section style="background: var(--background-light);">
+        <div class="container">
+            <h2 class="section-title" data-i18n="howitworks.title">איך זה עובד? 🎯</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 data-i18n="howitworks.step1.title">🎉 הרשמה והתחלה</h3>
+                        <p data-i18n="howitworks.step1.desc">הירשם בקלות עם מספר הוואטסאפ שלך והתחל ניסיון חינם</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 data-i18n="howitworks.step2.title">📊 הגדר תקציב</h3>
+                        <p data-i18n="howitworks.step2.desc">צור קטגוריות והגדר תקציבים חודשיים לכל קטגוריה</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 data-i18n="howitworks.step3.title">💬 שלח הודעות</h3>
+                        <p data-i18n="howitworks.step3.desc">שלח הוצאות דרך וואטסאפ בפורמט פשוט: "קניות 250 סופר"</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 data-i18n="howitworks.step4.title">📈 קבל עדכונים</h3>
+                        <p data-i18n="howitworks.step4.desc">קבל סיכומים ועדכונים על מצב התקציב בזמן אמת</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <h2 class="section-title" data-i18n="pricing.title">בחר את התוכנית המתאימה לך 💎</h2>
+            <div class="pricing-grid">
+                <!-- Free Trial -->
+                <div class="pricing-card">
+                    <h3 class="pricing-plan" data-i18n="pricing.free.title">🎁 ניסיון חינם</h3>
+                    <div class="pricing-price" data-i18n="pricing.free.price">חינם</div>
+                    <div class="pricing-period" data-i18n="pricing.free.period">14 יום</div>
+                    <ul class="pricing-features">
+                        <li data-i18n="pricing.free.feature1">עד 3 קטגוריות</li>
+                        <li data-i18n="pricing.free.feature2">מעקב הוצאות בסיסי</li>
+                        <li data-i18n="pricing.free.feature3">ממשק עברית</li>
+                        <li data-i18n="pricing.free.feature4">דוחות חודשיים</li>
+                    </ul>
+                    <a href="/register.html?plan=trial" class="btn btn-secondary btn-block" data-i18n="pricing.cta">התחל עכשיו</a>
+                </div>
+
+                <!-- Monthly Plan -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge" data-i18n="pricing.monthly.badge">🔥 הכי פופולרי</div>
+                    <h3 class="pricing-plan" data-i18n="pricing.monthly.title">⭐ מנוי חודשי</h3>
+                    <div class="pricing-price" data-i18n="pricing.monthly.price">₪19</div>
+                    <div class="pricing-period" data-i18n="pricing.monthly.period">לחודש</div>
+                    <ul class="pricing-features">
+                        <li data-i18n="pricing.monthly.feature1">קטגוריות ללא הגבלה</li>
+                        <li data-i18n="pricing.monthly.feature2">תקציבים משותפים</li>
+                        <li data-i18n="pricing.monthly.feature3">דוחות מתקדמים</li>
+                        <li data-i18n="pricing.monthly.feature4">התראות חכמות</li>
+                        <li data-i18n="pricing.monthly.feature5">תמיכה מלאה</li>
+                    </ul>
+                    <a href="/register.html?plan=monthly" class="btn btn-primary btn-block" data-i18n="pricing.cta">התחל עכשיו</a>
+                </div>
+
+                <!-- Yearly Plan -->
+                <div class="pricing-card">
+                    <h3 class="pricing-plan" data-i18n="pricing.yearly.title">💰 מנוי שנתי</h3>
+                    <div class="pricing-price" data-i18n="pricing.yearly.price">₪190</div>
+                    <div class="pricing-period" data-i18n="pricing.yearly.period">לשנה (2 חודשים חינם)</div>
+                    <ul class="pricing-features">
+                        <li data-i18n="pricing.yearly.feature1">כל התכונות של החודשי</li>
+                        <li data-i18n="pricing.yearly.feature2">חיסכון של 2 חודשים</li>
+                        <li data-i18n="pricing.yearly.feature3">עדיפות בתמיכה</li>
+                        <li data-i18n="pricing.yearly.feature4">גישה מוקדמת לתכונות</li>
+                    </ul>
+                    <a href="/register.html?plan=yearly" class="btn btn-secondary btn-block" data-i18n="pricing.cta">התחל עכשיו</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; position: relative; overflow: hidden;">
+        <div class="container" style="position: relative; z-index: 1;">
+            <div style="font-size: 4rem; margin-bottom: 1rem;">🚀</div>
+            <h2 data-i18n="cta.title" style="color: white;">מוכנים להתחיל?</h2>
+            <p data-i18n="cta.subtitle" style="font-size: 1.25rem; margin-bottom: 2rem;">הצטרף לאלפי משתמשים שכבר מנהלים את התקציב בחוכמה</p>
+            <a href="/register.html" class="btn btn-whatsapp" style="font-size: 1.25rem; padding: 1rem 2.5rem;" data-i18n="cta.button">הרשמה חינם ✨</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">💰✨</div>
+            <div class="footer-links">
+                <a href="/privacy.html" data-i18n="footer.privacy">מדיניות פרטיות</a>
+                <a href="/terms.html" data-i18n="footer.terms">תנאי שימוש</a>
+            </div>
+            <p class="footer-text" data-i18n="footer.copyright">© 2024 WhatsApp Expense Tracker. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
