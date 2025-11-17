@@ -82,10 +82,10 @@ Make sure your Go backend (deployed on Cloud Run) has:
 
 ### Testing Backend Connection
 
-Update `js/register.js` to point to your backend:
+The backend URL is configured in `js/register.js`:
 
 ```javascript
-const API_BASE_URL = 'https://your-backend.run.app';
+const API_BASE_URL = 'https://whatsapp-bot-1095034461620.us-central1.run.app';
 ```
 
 ## Local Development

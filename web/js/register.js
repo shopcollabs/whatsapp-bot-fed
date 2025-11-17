@@ -4,7 +4,7 @@
 // Get API base URL from environment or default to local
 const API_BASE_URL = window.location.hostname === 'localhost'
   ? 'http://localhost:8080'
-  : 'https://whatsapp-bot-production.run.app';
+  : 'https://whatsapp-bot-1095034461620.us-central1.run.app';
 
 document.addEventListener('DOMContentLoaded', function() {
   // Get form elements
