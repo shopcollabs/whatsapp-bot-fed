@@ -65,6 +65,11 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: var(--font-primary);
   color: var(--text-dark);
@@ -73,6 +78,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 /* RTL Support */
@@ -299,12 +306,22 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
+  width: 100%;
 }
 
 .container-narrow {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
+  width: 100%;
+}
+
+/* Ensure responsive images and media */
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Hero Section - VIBRANT! */
@@ -1002,6 +1019,207 @@ body:not(.rtl) .content-page ol {
 
 .emoji-decoration:nth-child(2n) {
   animation-delay: 1s;
+}
+
+/* Mobile-Specific Styles (Small Screens) */
+@media (max-width: 767px) {
+  /* Prevent horizontal overflow on mobile */
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Adjust background shapes for mobile */
+  .background-shapes {
+    display: none; /* Hide on mobile to improve performance */
+  }
+
+  /* Reduce overall font sizes for mobile */
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  /* Optimize header for mobile */
+  header {
+    padding: var(--spacing-xs) 0;
+  }
+
+  .header-content {
+    padding: 0 var(--spacing-sm);
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .logo-icon {
+    font-size: 1.35rem;
+  }
+
+  /* Mobile navigation - compact layout */
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    font-size: 0.8rem;
+    justify-content: flex-end;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    padding: 0.35rem 0.65rem;
+    white-space: nowrap;
+  }
+
+  .lang-toggle {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  .btn-primary.nav-links .btn {
+    padding: 0.35rem 0.85rem;
+    font-size: 0.8rem;
+  }
+
+  /* Hero section - mobile optimized */
+  .hero {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  /* Section spacing */
+  section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  /* Container padding */
+  .container,
+  .container-narrow {
+    padding: 0 var(--spacing-sm);
+  }
+
+  /* Benefits cards */
+  .benefit-card {
+    padding: var(--spacing-md);
+  }
+
+  .benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  /* Steps */
+  .step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-md);
+  }
+
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  /* Pricing cards */
+  .pricing-card {
+    padding: var(--spacing-md);
+  }
+
+  .pricing-plan {
+    font-size: 1.5rem;
+  }
+
+  .pricing-price {
+    font-size: 2.5rem;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.95rem;
+  }
+
+  /* Forms */
+  .form-group input,
+  .form-group select {
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .footer-links {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  /* Reduce spacing variables for mobile */
+  :root {
+    --spacing-xl: 2rem;
+  }
+
+  /* Ensure all wide elements fit */
+  .pricing-card,
+  .benefit-card,
+  .step {
+    max-width: 100%;
+    overflow: hidden;
+  }
+}
+
+/* Extra Small Screens (iPhone SE, etc.) */
+@media (max-width: 374px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .nav-links a,
+  .lang-toggle {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.65rem 1rem;
+  }
 }
 
 /* Responsive Design */
