@@ -182,7 +182,7 @@ Recommended Israeli payment providers:
 
 - Minimal JavaScript (vanilla JS, no frameworks)
 - Optimized CSS with mobile-first approach
-- Static files cached for 1 year on Vercel
+- Static files (CSS/JS) cached for 5 minutes on Vercel, HTML always fresh
 - No external dependencies (except fonts)
 
 ## Next Steps
