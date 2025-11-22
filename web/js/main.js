@@ -242,7 +242,60 @@ document.addEventListener('DOMContentLoaded', function() {
   if (langToggle) {
     langToggle.addEventListener('click', toggleLanguage);
   }
+
+  // Setup mobile menu toggle
+  setupMobileMenu();
 });
+
+// Mobile Menu Functionality
+function setupMobileMenu() {
+  const menuToggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  if (!menuToggle || !navLinks) return;
+
+  // Toggle menu on button click
+  menuToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    toggleMobileMenu();
+  });
+
+  // Close menu when clicking on a nav link
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function() {
+      closeMobileMenu();
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    if (navLinks.classList.contains('active') &&
+        !navLinks.contains(e.target) &&
+        !menuToggle.contains(e.target)) {
+      closeMobileMenu();
+    }
+  });
+}
+
+function toggleMobileMenu() {
+  const menuToggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const body = document.body;
+
+  menuToggle.classList.toggle('active');
+  navLinks.classList.toggle('active');
+  body.classList.toggle('menu-open');
+}
+
+function closeMobileMenu() {
+  const menuToggle = document.getElementById('mobileMenuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const body = document.body;
+
+  menuToggle.classList.remove('active');
+  navLinks.classList.remove('active');
+  body.classList.remove('menu-open');
+}
 
 // Toggle language
 function toggleLanguage() {

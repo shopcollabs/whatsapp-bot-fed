@@ -15,7 +15,12 @@
             <div class="logo">
                 <span>Expense Tracker</span>
             </div>
-            <nav class="nav-links">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links" id="navLinks">
                 <a href="#features" data-i18n="nav.features">תכונות</a>
                 <a href="#pricing" data-i18n="nav.pricing">מחירים</a>
                 <a href="#faq" data-i18n="nav.faq">שאלות נפוצות</a>
@@ -182,28 +187,28 @@
             <h2 class="section-title" data-i18n="faq.title">שאלות נפוצות</h2>
             <div class="faq-grid">
                 <div class="faq-item">
-                    <h3 class="faq-question" data-i18n="faq.q1.question">איך יוצרים קבוצת תקציב משותפת?</h3>
-                    <p class="faq-answer" data-i18n="faq.q1.answer">פשוט שלח "צור משפחה" בוואטסאפ. תקבל קוד הזמנה ייחודי שתוכל לשתף עם בני משפחה או שותפים. הם יצטרפו על ידי שליחת "הצטרף [קוד]".</p>
+                    <h3 class="faq-question" data-i18n="faq.q1.question">איך עובד מעקב הוצאות דרך וואטסאפ?</h3>
+                    <p class="faq-answer" data-i18n="faq.q1.answer">המערכת מתחברת לוואטסאפ שלך ומאפשרת לך לתעד הוצאות בהודעות פשוטות. פשוט כתוב את סוג ההוצאה והסכום, והמערכת תעדכן את התקציב שלך אוטומטית. זה כמו לשלוח הודעה לחבר - פשוט וטבעי.</p>
                 </div>
                 <div class="faq-item">
-                    <h3 class="faq-question" data-i18n="faq.q2.question">כמה קטגוריות אפשר ליצור?</h3>
-                    <p class="faq-answer" data-i18n="faq.q2.answer">בתוכנית החינמית ניתן ליצור עד 3 קטגוריות (כמו קניות, מכולת, חיות מחמד). בתוכנית הפרמיום אין הגבלה על מספר הקטגוריות.</p>
+                    <h3 class="faq-question" data-i18n="faq.q2.question">מה זה תקציב משותף ולמה זה שימושי?</h3>
+                    <p class="faq-answer" data-i18n="faq.q2.answer">תקציב משותף מאפשר לכל בני המשפחה או השותפים לדירה לעקוב אחרי ההוצאות המשותפות במקום אחד. כולם רואים את אותו התמונה ויכולים לתעד הוצאות - מושלם לניהול תקציב משפחתי או דירה משותפת.</p>
                 </div>
                 <div class="faq-item">
-                    <h3 class="faq-question" data-i18n="faq.q3.question">איך מתעדים הוצאה?</h3>
-                    <p class="faq-answer" data-i18n="faq.q3.answer">כתוב את שם הקטגוריה ואת הסכום, למשל "שופינג 120". תוכל גם להוסיף הערה: "שופינג 85 - חולצה חדשה". זה פשוט!</p>
+                    <h3 class="faq-question" data-i18n="faq.q3.question">האם צריך להוריד אפליקציה נוספת?</h3>
+                    <p class="faq-answer" data-i18n="faq.q3.answer">לא! זו בדיוק היופי של השירות - הכל עובד דרך וואטסאפ שכבר יש לך. אין צורך להוריד אפליקציה נוספת או להירשם למקומות נוספים. פשוט משתמשים בוואטסאפ כרגיל.</p>
                 </div>
                 <div class="faq-item">
-                    <h3 class="faq-question" data-i18n="faq.q4.question">איך מקבלים סיכום חודשי?</h3>
-                    <p class="faq-answer" data-i18n="faq.q4.answer">פשוט שלח "סיכום" בכל זמן לקבל פירוט מלא של כל ההוצאות, היתרה בכל קטגוריה, והתקציב שנותר.</p>
+                    <h3 class="faq-question" data-i18n="faq.q4.question">איך אני יכול לראות איפה אני עומד עם התקציב?</h3>
+                    <p class="faq-answer" data-i18n="faq.q4.answer">המערכת שולחת לך סיכום מפורט בכל עת שתבקש. תוכל לראות כמה הוצאת בכל קטגוריה, כמה נשאר לך מהתקציב, ואפילו לקבל התראות כשאתה מתקרב לגבול התקציב.</p>
                 </div>
                 <div class="faq-item">
-                    <h3 class="faq-question" data-i18n="faq.q5.question">מה ההבדל בין התוכניות?</h3>
-                    <p class="faq-answer" data-i18n="faq.q5.answer">התוכנית החינמית מאפשרת עד 3 קטגוריות ותקציב אחד פעיל. התוכנית הפרמיום מציעה קטגוריות בלתי מוגבלות, תקציבים מרובים, היסטוריה מלאה ותמיכה עדיפה.</p>
+                    <h3 class="faq-question" data-i18n="faq.q5.question">האם המידע שלי מאובטח?</h3>
+                    <p class="faq-answer" data-i18n="faq.q5.answer">בהחלט! אנחנו משתמשים בהצפנה ברמה הגבוהה ביותר לשמירה על הנתונים שלך. המידע שלך נשמר בצורה מאובטחת ולא משותף עם צדדים שלישיים. הפרטיות והאבטחה שלך הם בראש סדר העדיפויות שלנו.</p>
                 </div>
                 <div class="faq-item">
-                    <h3 class="faq-question" data-i18n="faq.q6.question">האם ניתן לעקוב אחרי הוצאות קבועות?</h3>
-                    <p class="faq-answer" data-i18n="faq.q6.answer">כן! תוכל להוסיף הוצאות קבועות חודשיות כמו שכירות או ביטוח באמצעות "קבוע דירה 3500". ההוצאות האלו יתווספו אוטומטית לסיכום החודשי.</p>
+                    <h3 class="faq-question" data-i18n="faq.q6.question">מה קורה אם אני רוצה לבטל?</h3>
+                    <p class="faq-answer" data-i18n="faq.q6.answer">אפשר לבטל את המנוי בכל עת, בלי התחייבות ובלי עמלות ביטול. תקופת הניסיון החינמית מאפשרת לך לנסות את השירות ללא סיכון. גם אחרי המנוי, תוכל לבטל בכל רגע ולשמור על כל הנתונים שלך.</p>
                 </div>
             </div>
         </div>
