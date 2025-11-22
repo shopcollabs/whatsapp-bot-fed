@@ -13,10 +13,14 @@
     <header>
         <div class="header-content">
             <a href="/index.html" class="logo">
-                <span class="logo-icon">💰</span>
                 <span>Expense Tracker</span>
             </a>
-            <nav class="nav-links">
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links" id="navLinks">
                 <button id="langToggle" class="lang-toggle">English</button>
             </nav>
         </div>
@@ -94,7 +98,7 @@
                 <div class="alert alert-info mt-md">
                     <small>
                         <span data-i18n="register.payment.note">
-                            💳 תשלום יתבצע רק בתום תקופת הניסיון. אפשר לבטל בכל עת.
+                            תשלום יתבצע רק בתום תקופת הניסיון. אפשר לבטל בכל עת.
                         </span>
                     </small>
                 </div>
