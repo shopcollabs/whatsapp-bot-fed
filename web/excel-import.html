@@ -13,7 +13,9 @@
     <header>
         <div class="header-content">
             <div class="logo">
-                <span>Expense Tracker</span>
+                <a href="/index.html" style="text-decoration: none; color: inherit;">
+                    <span>Expense Tracker</span>
+                </a>
             </div>
             <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
                 <span></span>
@@ -24,6 +26,7 @@
                 <a href="/index.html#features" data-i18n="nav.features">תכונות</a>
                 <a href="/index.html#pricing" data-i18n="nav.pricing">מחירים</a>
                 <a href="/index.html#faq" data-i18n="nav.faq">שאלות נפוצות</a>
+                <a href="/excel-import.html" data-i18n="nav.excel">ייבוא אקסל</a>
                 <button id="langToggle" class="lang-toggle">English</button>
                 <a href="/register.html" class="btn btn-primary" data-i18n="nav.register">הרשמה</a>
             </nav>
@@ -61,67 +64,6 @@
                     </svg>
                     <span data-i18n="excel.download.button">הורד קובץ דוגמה</span>
                 </a>
-            </div>
-
-            <!-- Excel Structure Explanation -->
-            <div style="margin-bottom: 3rem;">
-                <h2 style="color: var(--primary-dark); margin-bottom: 1.5rem; font-size: 1.75rem;" data-i18n="excel.structure.title">מבנה הקובץ</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.6;" data-i18n="excel.structure.desc">
-                    קובץ האקסל מחולק לשני חלקים עיקריים: קטגוריות והוצאות קבועות. מלא את הפרטים בהתאם לצרכים שלך.
-                </p>
-
-                <div class="benefits-grid" style="margin-bottom: 2rem;">
-                    <!-- Categories Section -->
-                    <div class="benefit-card" style="text-align: start;">
-                        <h3 style="color: var(--primary-color); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="background: var(--primary-light); color: var(--primary-dark); width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.875rem;">A-B</span>
-                            <span data-i18n="excel.structure.categories.title">קטגוריות</span>
-                        </h3>
-                        <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-secondary); line-height: 1.8;">
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--background-gray);">
-                                <strong style="color: var(--primary-dark);" data-i18n="excel.structure.categories.column_a">עמודה A:</strong>
-                                <span data-i18n="excel.structure.categories.column_a_desc">שם הקטגוריה</span>
-                            </li>
-                            <li style="padding: 0.5rem 0;">
-                                <strong style="color: var(--primary-dark);" data-i18n="excel.structure.categories.column_b">עמודה B:</strong>
-                                <span data-i18n="excel.structure.categories.column_b_desc">תקציב חודשי</span>
-                            </li>
-                        </ul>
-                        <div style="background: var(--background-gray); padding: 1rem; border-radius: 8px; margin-top: 1rem; font-family: monospace; font-size: 0.875rem;">
-                            <div style="color: var(--text-secondary); margin-bottom: 0.5rem;" data-i18n="excel.structure.categories.example">דוגמה:</div>
-                            <div style="color: var(--primary-dark);">סאני | 1000</div>
-                            <div style="color: var(--primary-dark);">קניות | 2000</div>
-                            <div style="color: var(--primary-dark);">דירה | 8000</div>
-                        </div>
-                    </div>
-
-                    <!-- Fixed Expenses Section -->
-                    <div class="benefit-card" style="text-align: start;">
-                        <h3 style="color: var(--primary-color); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="background: var(--primary-light); color: var(--primary-dark); width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.875rem;">D-F</span>
-                            <span data-i18n="excel.structure.expenses.title">הוצאות קבועות</span>
-                        </h3>
-                        <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-secondary); line-height: 1.8;">
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--background-gray);">
-                                <strong style="color: var(--primary-dark);" data-i18n="excel.structure.expenses.column_d">עמודה D:</strong>
-                                <span data-i18n="excel.structure.expenses.column_d_desc">שם ההוצאה</span>
-                            </li>
-                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--background-gray);">
-                                <strong style="color: var(--primary-dark);" data-i18n="excel.structure.expenses.column_e">עמודה E:</strong>
-                                <span data-i18n="excel.structure.expenses.column_e_desc">סכום ההוצאה</span>
-                            </li>
-                            <li style="padding: 0.5rem 0;">
-                                <strong style="color: var(--primary-dark);" data-i18n="excel.structure.expenses.column_f">עמודה F:</strong>
-                                <span data-i18n="excel.structure.expenses.column_f_desc">קטגוריה משויכת</span>
-                            </li>
-                        </ul>
-                        <div style="background: var(--background-gray); padding: 1rem; border-radius: 8px; margin-top: 1rem; font-family: monospace; font-size: 0.875rem;">
-                            <div style="color: var(--text-secondary); margin-bottom: 0.5rem;" data-i18n="excel.structure.expenses.example">דוגמה:</div>
-                            <div style="color: var(--primary-dark);">אוכל לסאני | 300 | סאני</div>
-                            <div style="color: var(--primary-dark);">שכר דירה | 6600 | דירה</div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <!-- How to Use - Steps -->
