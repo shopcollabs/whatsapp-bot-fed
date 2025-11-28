@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ייבוא קטגוריות והוצאות קבועות מאקסל - WhatsApp Expense Tracker">
+    <title>ייבוא מאקסל - WhatsApp Expense Tracker</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="rtl">
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; color: inherit;">
+                    <span>Expense Tracker</span>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links" id="navLinks">
+                <a href="/index.html#features" data-i18n="nav.features">תכונות</a>
+                <a href="/index.html#pricing" data-i18n="nav.pricing">מחירים</a>
+                <a href="/index.html#faq" data-i18n="nav.faq">שאלות נפוצות</a>
+                <a href="/excel-import.html" data-i18n="nav.excel">ייבוא אקסל</a>
+                <button id="langToggle" class="lang-toggle">English</button>
+                <a href="/register.html" class="btn btn-primary" data-i18n="nav.register">הרשמה</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Back to Home -->
+    <section style="background: var(--background-gray); padding: 1rem 0;">
+        <div class="container">
+            <a href="/index.html" style="color: var(--primary-color); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <span data-i18n="nav.back">← חזור לדף הבית</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content-page" style="padding: 3rem 0;">
+        <div class="container-narrow">
+            <h1 class="section-title" data-i18n="excel.title">ייבוא מאקסל</h1>
+            <p class="text-center" style="font-size: 1.125rem; color: var(--text-secondary); margin-bottom: 3rem;" data-i18n="excel.subtitle">
+                ייבא בקלות קטגוריות והוצאות קבועות ישירות מקובץ אקסל
+            </p>
+
+            <!-- Download Template Section -->
+            <div style="background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%); padding: 2rem; border-radius: 12px; text-align: center; margin-bottom: 3rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <h2 style="color: white; margin-bottom: 1rem; font-size: 1.5rem;" data-i18n="excel.download.title">הורד קובץ דוגמה</h2>
+                <p style="color: white; margin-bottom: 1.5rem; opacity: 0.95;" data-i18n="excel.download.desc">
+                    התחל עם קובץ אקסל מוכן לשימוש - פשוט מלא את הפרטים ושלח לבוט
+                </p>
+                <a href="/downloads/expense_template.xlsx" class="btn btn-whatsapp btn-lg" download style="background: white; color: var(--primary-color); box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 20px; height: 20px; margin-inline-end: 0.5rem; display: inline-block; vertical-align: middle;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span data-i18n="excel.download.button">הורד קובץ דוגמה</span>
+                </a>
+            </div>
+
+            <!-- How to Use - Steps -->
+            <div style="margin-bottom: 3rem;">
+                <h2 style="color: var(--primary-dark); margin-bottom: 1.5rem; font-size: 1.75rem;" data-i18n="excel.howto.title">איך משתמשים?</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-i18n="excel.howto.step1.title">הורד את הקובץ</h3>
+                            <p data-i18n="excel.howto.step1.desc">לחץ על כפתור ההורדה למעלה כדי לקבל את קובץ הדוגמה</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-i18n="excel.howto.step2.title">מלא את הפרטים</h3>
+                            <p data-i18n="excel.howto.step2.desc">פתח את הקובץ באקסל ומלא את הקטגוריות וההוצאות הקבועות שלך</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-i18n="excel.howto.step3.title">שמור את הקובץ</h3>
+                            <p data-i18n="excel.howto.step3.desc">שמור את הקובץ במחשב או בטלפון שלך</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 data-i18n="excel.howto.step4.title">שלח לבוט</h3>
+                            <p data-i18n="excel.howto.step4.desc">שלח את הקובץ לבוט בוואטסאפ - הוא יייבא הכל אוטומטית</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Notes -->
+            <div style="background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 1.5rem; margin-bottom: 3rem;">
+                <h3 style="color: #856404; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 24px; height: 24px;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <span data-i18n="excel.notes.title">נקודות חשובות</span>
+                </h3>
+                <ul style="margin: 0; padding-inline-start: 1.5rem; color: #856404; line-height: 1.8;">
+                    <li data-i18n="excel.notes.point1">אל תמחק את שורת הכותרות (שורה 1)</li>
+                    <li data-i18n="excel.notes.point2">הקפד למלא את כל העמודות הנדרשות</li>
+                    <li data-i18n="excel.notes.point3">שם הקטגוריה בהוצאות קבועות חייב להתאים לשם קטגוריה קיימת</li>
+                    <li data-i18n="excel.notes.point4">ניתן להוסיף כמה שורות שתרצה</li>
+                    <li data-i18n="excel.notes.point5">הקובץ חייב להישאר בפורמט .xlsx</li>
+                </ul>
+            </div>
+
+            <!-- FAQ for Excel -->
+            <div>
+                <h2 style="color: var(--primary-dark); margin-bottom: 1.5rem; font-size: 1.75rem;" data-i18n="excel.faq.title">שאלות נפוצות</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="excel.faq.q1.question">מה קורה אם שם הקטגוריה כבר קיים?</h3>
+                        <p class="faq-answer" data-i18n="excel.faq.q1.answer">הבוט יעדכן את התקציב של הקטגוריה הקיימת במקום ליצור אחת חדשה.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="excel.faq.q2.question">האם אני חייב למלא גם קטגוריות וגם הוצאות קבועות?</h3>
+                        <p class="faq-answer" data-i18n="excel.faq.q2.answer">לא! אפשר למלא רק קטגוריות, רק הוצאות קבועות, או את שניהם. הבוט יייבא רק את מה שמלאת.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="excel.faq.q3.question">מה קורה אם יש טעות בקובץ?</h3>
+                        <p class="faq-answer" data-i18n="excel.faq.q3.answer">הבוט יודיע לך על שגיאות ויסביר מה צריך לתקן. לא תאבד מידע - פשוט תקן ושלח שוב.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question" data-i18n="excel.faq.q4.question">כמה פעמים אפשר להשתמש בייבוא?</h3>
+                        <p class="faq-answer" data-i18n="excel.faq.q4.answer">ללא הגבלה! אפשר לייבא קבצים כמה פעמים שתרצה, בכל תדירות שנוחה לך.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--background-gray); border-radius: 12px;">
+                <h2 style="color: var(--primary-dark); margin-bottom: 1rem;" data-i18n="excel.cta.title">מוכנים להתחיל?</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem;" data-i18n="excel.cta.subtitle">הורד את הקובץ והתחל לנהל את ההוצאות שלך בקלות</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="/downloads/expense_template.xlsx" class="btn btn-primary" download data-i18n="excel.cta.download">הורד קובץ דוגמה</a>
+                    <a href="/register.html" class="btn btn-secondary" data-i18n="excel.cta.signup">הרשם לשירות</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/privacy.html" data-i18n="footer.privacy">מדיניות פרטיות</a>
+                <a href="/terms.html" data-i18n="footer.terms">תנאי שימוש</a>
+                <a href="/index.html" data-i18n="footer.home">דף הבית</a>
+            </div>
+            <p class="footer-text" data-i18n="footer.copyright">© 2024 WhatsApp Expense Tracker. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
