@@ -243,6 +243,11 @@ function showAlert(message, type) {
 function showSuccess(data) {
   const formContainer = document.querySelector('.container-narrow');
 
+  // WhatsApp bot number and message
+  const botNumber = '972502309248';
+  const message = encodeURIComponent('עזרה קבוצות');
+  const whatsappUrl = `https://wa.me/${botNumber}?text=${message}`;
+
   // Create success content
   const successHTML = `
     <div class="text-center" style="padding: 3rem 0;">
@@ -251,10 +256,15 @@ function showSuccess(data) {
       <p style="font-size: 1.25rem; margin: 2rem 0;" data-i18n="register.success.message">
         ${t('register.success.message')}
       </p>
-      <div class="alert alert-info">
-        <strong data-i18n="register.success.next">${t('register.success.next')}</strong>
+      <div class="alert alert-info" style="margin-bottom: 2rem;">
+        <p data-i18n="register.success.next">${t('register.success.next')}</p>
       </div>
-      <a href="/index.html" class="btn btn-primary" style="margin-top: 2rem;">
+      <a href="${whatsappUrl}" target="_blank" class="btn btn-primary" style="margin-bottom: 1rem; display: inline-block; background: #25D366; border-color: #25D366;">
+        <span style="font-size: 1.2rem; margin-right: 0.5rem;">💬</span>
+        <span data-i18n="register.success.whatsapp.button">${t('register.success.whatsapp.button')}</span>
+      </a>
+      <br>
+      <a href="/index.html" class="btn btn-secondary" style="margin-top: 1rem; background: var(--secondary); color: var(--text);">
         ${getCurrentLang() === 'he' ? 'חזור לדף הבית' : 'Back to Home'}
       </a>
     </div>
