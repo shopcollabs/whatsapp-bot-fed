@@ -101,8 +101,9 @@ const translations = {
     'register.error.email': 'אנא הזן כתובת אימייל תקינה',
     'register.error.terms': 'יש לאשר את תנאי השימוש',
     'register.success.title': 'ההרשמה הושלמה בהצלחה!',
-    'register.success.next': 'כעת, שלח "עזרה קבוצות" לבוט בוואטסאפ כדי לפתוח קבוצה ולהתחיל:',
-    'register.success.whatsapp.button': 'שלח "עזרה קבוצות" לבוט',
+    'register.success.subtitle': 'מעולה! עכשיו בוא נתחיל לעבוד על התקציב שלך',
+    'register.success.next': 'לחץ כאן כדי לפתוח שיחה עם הבוט בוואטסאפ ולהתחיל:',
+    'register.success.whatsapp.button': 'התחל לעבוד עם הבוט',
 
     // Privacy Policy
     'privacy.title': 'מדיניות פרטיות',
@@ -263,8 +264,9 @@ const translations = {
     'register.error.email': 'Please enter a valid email address',
     'register.error.terms': 'You must agree to the terms of service',
     'register.success.title': 'Registration Successful!',
-    'register.success.next': 'Now, send "עזרה קבוצות" to the bot on WhatsApp to create a group and get started:',
-    'register.success.whatsapp.button': 'Send "עזרה קבוצות" to Bot',
+    'register.success.subtitle': 'Great! Now let\'s start working on your budget',
+    'register.success.next': 'Click here to open a chat with the bot on WhatsApp and get started:',
+    'register.success.whatsapp.button': 'Start Working with Bot',
 
     // Privacy Policy
     'privacy.title': 'Privacy Policy',
