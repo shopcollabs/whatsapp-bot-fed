@@ -102,7 +102,7 @@ const translations = {
     'register.error.terms': 'יש לאשר את תנאי השימוש',
     'register.success.title': 'ההרשמה הושלמה בהצלחה!',
     'register.success.subtitle': 'מעולה! עכשיו בוא נתחיל לעבוד על התקציב שלך',
-    'register.success.next': 'לחץ כאן כדי לפתוח שיחה עם הבוט בוואטסאפ ולהתחיל:',
+    'register.success.next': 'כתוב ״שלום״ כדי לפתוח שיחה עם הבוט בוואטסאפ ולהתחיל:',
     'register.success.whatsapp.button': 'התחל לעבוד עם הבוט',
 
     // Privacy Policy

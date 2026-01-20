@@ -245,7 +245,7 @@ function showSuccess(data) {
 
   // WhatsApp bot number and message
   const botNumber = '972502309248';
-  const message = encodeURIComponent('עזרה קבוצות');
+  const message = encodeURIComponent('שלום');
   const whatsappUrl = `https://wa.me/${botNumber}?text=${message}`;
 
   // WhatsApp logo SVG
